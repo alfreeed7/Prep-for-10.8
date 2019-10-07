@@ -1,1 +1,31 @@
+<html>
+<head>
+<title>
+Alfred's Prep for 10.8
+</title>
+    <link href="1.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="d3.js"></script>
+</head>
+    <body>
+        <h1>
+        d3 Algorithm
+        </h1>
+<P>
+    <i>Select:</i> it is like the selector in css. It will select the first element that matches in the DOM.
+<br>
+    <i>Append:</i> will create a new DOM element and append it to the end of the selection that we have in the first step. For instance, d3.select("body").append("p") will insert a paragraph to the end of the body.
+    <br>
+    <i>Text:</i> insert the string between the openging tag and the closing tag. In our case, we can insert a string between the p.
+    <br>
+    <i>Style:</i> it allows us to set the HTML attributes and CSS properties on our selections. For example, the original color of the text in the body is black, we can change it.
+        </P>
+ 
+        <script type="text/javascript">
+   var dataset = [1,2,3,4,5,6]; d3.select("body").selectAll("p")
+       .data(dataset)
+        .enter()
+        .append("p")
+        .text("I use the d3 here!");</script>
 
+    </body>
+</html>
