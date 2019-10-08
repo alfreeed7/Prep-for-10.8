@@ -19,13 +19,22 @@ Alfred's Prep for 10.8
     <br>
     <i>Style:</i> it allows us to set the HTML attributes and CSS properties on our selections. For example, the original color of the text in the body is black, we can change it.
         </P>
+    <svg>
+    </svg>
  
         <script type="text/javascript">
    var dataset = [1,2,3,4,5,6]; d3.select("body").selectAll("p")
        .data(dataset)
         .enter()
         .append("p")
-        .text("I use the d3 here!");</script>
+        .text("I use the d3 here!");
+        d3.select("svg")
+    .append("circle")
+        .attr("cx", 250)
+        .attr("cy", 70)
+        .attr("r", 50)
+        .attr("fill", "red");
+        </script>
 
     </body>
 </html>
